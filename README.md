@@ -68,11 +68,13 @@ $ docker-compose up -d
 ### Jenkins
 - set port of jenkins is 8080:8080
 1. Go to the browser http://localhost:8080 (Example: http://27.254.99.183:8080) <br>
+
 ![image](https://user-images.githubusercontent.com/77714043/182815207-dd41b505-b8f6-4766-9827-8ebf7781c871.png) <br>
 2. After running the Docker command successfully. Use this command to get a first password for login jenkins
 ```
 $ docker exec jenkins-lts cat /var/jenkins_home/secrets/initialAdminPassword
 ```
+
 ![image](https://user-images.githubusercontent.com/77714043/182815617-c6208b9e-427f-44c4-b9be-65fed025bf80.png) <br>
 
 3. Completed. you can install Jenkins on docker container successfully.
@@ -80,12 +82,14 @@ $ docker exec jenkins-lts cat /var/jenkins_home/secrets/initialAdminPassword
 ### GitLab
 - set port of gitlab is 8081:80
 1. Go to the browser http://localhost:8081 (Example: http://27.254.99.183:8081)
+
 ![image](https://user-images.githubusercontent.com/77714043/182815341-6acb9c0b-c966-4943-90b8-8977820a868e.png) <br>
 
 2. Default username: root & use this command to get a first password for login gitlab (After running the Docker command successfully)
 ```
 $ docker exec -it gitlab-ce grep 'Password:' /etc/gitlab/initial_root_password
 ```
+
 ![image](https://user-images.githubusercontent.com/77714043/182815507-138cfd38-7221-4273-8b4c-8957de752794.png) <br>
 
 3. Completed. you can install GitLab on docker container successfully.
