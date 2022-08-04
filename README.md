@@ -67,7 +67,7 @@ $ docker-compose up -d
 
 ### Jenkins
 - set port of jenkins is 8080:8080
-1. Go to the browser http://localhost:8080 (Example: http://27.254.99.183:8080)
+1. Go to the browser http://localhost:8080 (Example: http://27.254.99.183:8080) <br>
 ![image](uploads/849a09b90242c7f436885051c229b071/image.png)
 2. After running the Docker command successfully. Use this command to get a first password for login jenkins
 ```
