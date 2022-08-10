@@ -56,8 +56,6 @@ $ docker-compose -v
 2. Create directory to store docker-compose.yml file.
 ```
 $ mkdir test-docker-compose
-$ mkdir ~/jenkins_home 
-$ export GITLAB_HOME=$(pwd)/gitlab
 $ cd test-docker-compose
 ```
 3. Download docker-compose.yml file and store this file in directory: test-docker-compose
