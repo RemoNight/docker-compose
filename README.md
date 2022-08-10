@@ -73,7 +73,8 @@ $ docker-compose up -d
 ![image](https://user-images.githubusercontent.com/77714043/182815207-dd41b505-b8f6-4766-9827-8ebf7781c871.png) <br>
 2. After running the Docker command successfully. Use this command to get a first password for login jenkins
 ```
-$ docker exec jenkins-lts cat /var/jenkins_home/secrets/initialAdminPassword
+$ find . -iname "Initial*"
+$ cat ./jenkins/jenkins_home/secrets/initialAdminPassword
 ```
 
 ![image](https://user-images.githubusercontent.com/77714043/182815617-c6208b9e-427f-44c4-b9be-65fed025bf80.png) <br>
@@ -88,7 +89,8 @@ $ docker exec jenkins-lts cat /var/jenkins_home/secrets/initialAdminPassword
 
 2. Default username: root & use this command to get a first password for login gitlab (After running the Docker command successfully)
 ```
-$ docker exec -it gitlab-ce grep 'Password:' /etc/gitlab/initial_root_password
+$ find . -iname "Initial*"
+$ cat ./gitlab/config/initial_root_password
 ```
 
 ![image](https://user-images.githubusercontent.com/77714043/182815507-138cfd38-7221-4273-8b4c-8957de752794.png) <br>
