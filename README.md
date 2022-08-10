@@ -1,5 +1,8 @@
 # Steps to use docker-compose for install services: GitLab & Jenkins
 
+# Spec Machine
+- RAM > 8 GB !
+
 ### Uninstall old versions & Install using the repository
 1. Uninstall docker (If you have older versions of docker) on your machine.
 ```
